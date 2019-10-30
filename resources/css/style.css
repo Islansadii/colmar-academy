@@ -1,0 +1,86 @@
+/* Base settings */
+* {
+    margin: 0;
+}
+html {
+    font-size: 16px;
+}
+body {
+    background-color: seashell;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+}
+
+/* Navbar */
+navbar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background-color: seashell;
+    z-index: 20;
+    height: 4rem;
+}
+
+#navbar2 {
+    display: none;
+}
+
+#navbar {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;  
+}
+
+.navbar-left1 {
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+}
+
+.navbar-left1 p {
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+.navbar-right1 ul {
+    display: inline-flex;
+    wrap: no-wrap;
+    padding-right: 1.5rem;
+    align-items: center;
+    padding-left: 0;
+}
+
+.navbar-right1 li {
+    list-style: none;
+    padding-left: 1rem;
+    wrap: no-wrap;
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    .navbar-right1 ul {
+        justify-content: flex-end;
+        padding-right: 5px;
+    }
+    .navbar-right1 li {
+        padding-left: 0.5rem;
+    }
+    .navbar-left1 {
+        padding-left: 5px;
+    }
+
+}
+@media screen and (max-width:480px) {
+    navbar {
+        display: none;
+    }
+    #navbar2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 4rem;
+    }
+}
+
+
