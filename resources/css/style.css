@@ -58,7 +58,7 @@ navbar {
     text-align: center;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (min-width:480px) and (max-width:768px){
     .navbar-right1 ul {
         justify-content: flex-end;
         padding-right: 5px;
@@ -80,7 +80,14 @@ navbar {
         justify-content: space-around;
         align-items: center;
         height: 4rem;
+        width: 100%;
     }
+}
+
+
+video {
+    width: 100%;
+    height: auto;
 }
 
 
