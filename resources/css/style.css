@@ -22,7 +22,13 @@ navbar {
 }
 
 #navbar2 {
-    display: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    background-color: seashell;
 }
 
 #navbar {
@@ -81,6 +87,8 @@ navbar {
         align-items: center;
         height: 4rem;
         width: 100%;
+        position: fixed;
+        background-color: seashell;
     }
 }
 
