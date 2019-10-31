@@ -9,6 +9,7 @@ body {
     background-color: whitesmoke;
     font-family: 'Nunito', sans-serif;
     color: black;
+    max-width: 100%;
 }
 img {
     max-width: 100%;
@@ -28,7 +29,7 @@ h3 {
 navbar {
     position: fixed;
     display: flex;
-    width: 100%;
+    max-width: 100%;
     background-color: whitesmoke;
     z-index: 20;
     height: 4rem;
