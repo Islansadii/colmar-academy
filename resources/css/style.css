@@ -301,7 +301,7 @@ a {
     background-color: rgb(199, 192, 187);
     display: flex;
     flex-direction: column;
-    align-items: center;;
+    align-items: center;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -331,26 +331,13 @@ a {
 .about p {
     padding: 0.5rem 0;
 }
-.containers {
+#learning .containers {
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0 3rem 2rem 3rem;
 
 }
-
-.learning-container img {
-
-}
-
-.learning-container h4 {
-
-}
-
-.learning-container p {
-
-}
-
 /* Learning section for screens <480px, >480px */
 @media screen and (max-width:480px) {
     #learning {
@@ -369,17 +356,60 @@ a {
         width: 100%;
         padding: 0.5rem;
     }
-    .containers {
+    #learning .containers {
         padding: 0 1rem 1.5rem 1rem;
         box-sizing: content-box;
         display: block;
     }
 }
 @media screen and (min-width:480px) and (max-width:600px) {
-    .containers {
+    #learning .containers {
         padding: 0 1rem 2rem 1rem;
     }
     .learning-container {
         padding: 0.5rem;
     }
 }
+
+
+/* EXHIBIT SECTION */
+#exhibit {
+    display: flex;
+    top: 4rem;
+    position: relative;
+    flex-direction: column;
+    background-color: whitesmoke;  
+    align-items: center;
+}
+
+#exhibit .containers {
+    display: flex;
+    flex-direction: row;
+}
+
+#exhibit h2 {
+    padding: 2rem 0 1rem 0;
+    display: block;
+}
+
+.exhibit-left {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+}
+
+.exhhibit-left .left-top,
+.exhibit-left .left-bottom {
+    padding: 2rem 1.5rem 0 1.5rem;
+}
+
+.exhibit-right {
+
+}
+
+.exhibit-right .exhibit-container 
+
+.exhibit-right .exhibit-container img
+
+.exhibit-container .info
+
