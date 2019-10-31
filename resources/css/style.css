@@ -246,7 +246,6 @@ a {
 }
 
 .practise-container img {
-    
     align-self: center;
     max-width: 35%;
 }
@@ -396,20 +395,62 @@ a {
     display: flex;
     flex-direction: column;
     max-width: 60%;
+    padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
-.exhhibit-left .left-top,
+video {
+    width: 100%;
+    padding-bottom: 1.5rem;
+}
 .exhibit-left .left-bottom {
-    padding: 2rem 1.5rem 0 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.exhibit-left .left-bottom p {
+    padding: 0.5rem 0;
 }
 
 .exhibit-right {
-
+    display: flex;
+    flex-direction: column;
+    min-width: 40%;
+    justify-content: flex-start;
+    padding-bottom: 2rem;
 }
 
-.exhibit-right .exhibit-container 
+.exhibit-right .exhibit-container {
+    display: flex;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-bottom: solid 2px rgb(199, 192, 187);
+    border-left: solid 2px rgb(199, 192, 187);
+}
 
-.exhibit-right .exhibit-container img
+#fisma {
+    background-color: rgb(199, 192, 187);
+}
 
-.exhibit-container .info
+.exhibit-right .exhibit-container img {
+    align-self: center;
+    max-width: 35%;
+}
 
+.exhibit-container .info {
+    display: flex;
+    flex-direction: column;
+    min-width: 65%;
+    padding: 0 0 0 1rem;
+    justify-content: center;
+}
+/* Exhibit section for screens <480px, >480px */
+@media screen and (max-width:480px) {
+    .exhibit-right,
+    .exhibit-left .left-bottom {
+        display: none;
+    }
+    .exhibit-left {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        border-bottom: solid 2px rgb(199, 192, 187);
+    }
+}
