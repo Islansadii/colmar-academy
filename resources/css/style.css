@@ -141,6 +141,7 @@ header {
     header {
         flex-direction: column;
         width: 100%;
+        top: 4rem;
     }
     .header-left,
     .header-right {
