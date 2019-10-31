@@ -18,12 +18,21 @@ h1 {
     line-height: 1;
     padding-bottom: 1rem;
 }
+h2 {
+    font-size: 2.5rem;
+}
 h3 {
     font-weight: 400;
     font-size: 1.5rem;
     padding-bottom: 1rem;
 }
-
+h4 {
+    font-size: 1.2rem;
+}
+h6 {
+    font-size: 0.8rem;
+}
+p {}
 /* NAVBAR */
 navbar {
     position: fixed;
@@ -179,3 +188,73 @@ a {
     }
    
 }
+
+/* PRACTISE SECTION */
+#practise {
+    display: flex;
+    top: 4rem;
+    position: relative;
+    flex-direction: row;
+    background-color: whitesmoke;
+}
+
+.practise-left {
+    display: flex;
+    flex-direction: column;
+    min-width: 60%;
+    margin-bottom: 2rem;
+}
+
+.practise-left .left-top,
+.practise-left .left-bottom {
+    padding: 2rem 1.5rem 0 1.5rem;
+}
+
+.practise-left .left-top img {
+   width: 100%;
+}
+
+.practise-left .left-bottom p {
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+.practise-right {
+    display: flex;
+    flex-direction: column;
+    min-width: 40%;
+    justify-content: space-between;
+    border-left: solid 2px rgb(199, 192, 187);
+    padding-bottom: 2rem;
+}
+
+.practise-container p {
+    padding: 0.5rem 0;
+} 
+
+.practise-container {
+    display: inline-flex;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-bottom: solid 2px rgb(199, 192, 187);
+    height: 33.3%;
+}
+
+.guest {
+    background-color: rgb(199, 192, 187);
+}
+
+.practise-container img {
+    
+    align-self: center;
+    max-width: 35%;
+}
+
+.practise-container .info {
+    display: flex;
+    flex-direction: column;
+    min-width: 65%;
+    padding: 0 0 0 1rem;
+    justify-content: center;
+    
+}
+
+
