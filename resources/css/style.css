@@ -92,6 +92,9 @@ navbar {
     .navbar-left1 {
         padding-left: 5px;
     }
+    #navbar2 {
+        display: none;
+    }
 
 }
 @media screen and (max-width:480px) {
@@ -103,7 +106,7 @@ navbar {
     }
 }
 @media screen and (min-width:768px) {
-    .navbar2 {
+    #navbar2 {
         display: none;
     }
     navbar {
