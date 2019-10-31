@@ -33,6 +33,8 @@ h6 {
     font-size: 0.8rem;
 }
 p {}
+
+
 /* NAVBAR */
 navbar {
     position: fixed;
@@ -189,6 +191,7 @@ a {
    
 }
 
+
 /* PRACTISE SECTION */
 #practise {
     display: flex;
@@ -215,7 +218,7 @@ a {
 }
 
 .practise-left .left-bottom p {
-    padding: 1.5rem 0 1.5rem 0;
+    padding: 1.5rem 0.5rem 1.5rem 0;
 }
 
 .practise-right {
@@ -238,7 +241,7 @@ a {
     height: 33.3%;
 }
 
-.guest {
+#guest {
     background-color: rgb(199, 192, 187);
 }
 
@@ -257,4 +260,41 @@ a {
     
 }
 
+.n1 {
+
+}
+
+.n2 {
+
+}
+/* Practise section for screens <480 */
+@media screen and (max-width:480px) {
+    .n1 {
+        display: none;
+    }
+    .n2 {
+        display: block;
+        min-width: 100%;
+    }
+    .practise-left {
+        display: none;
+    }  
+    .practise-container {
+        flex-direction: column;
+    }
+    .practise-container .info {
+        padding: 1rem 2rem 1rem 1rem;
+    }
+    #guest {
+        background-color: whitesmoke;
+    }
+}
+@media screen and (min-width:480px) {
+    .n1 {
+        display: block;
+    }
+    .n2 {
+        display: none;
+    }
+}
 
