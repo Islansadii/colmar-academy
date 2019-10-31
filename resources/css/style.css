@@ -35,18 +35,6 @@ navbar {
     border-bottom: solid 2px rgb(199, 192, 187);
 }
 
-#navbar2 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 4rem;
-    width: 100%;
-    position: fixed;
-    background-color: whitesmoke;
-    border-bottom: solid 2px rgb(199, 192, 187);
-    z-index: 20;
-}
-
 #navbar {
     justify-content: space-between;
     align-items: center;
@@ -80,22 +68,21 @@ navbar {
     text-align: center;
 }
 
-/* Navbar for screens <480, 480-768, >768 */
-
+/* Navbar for screens <480, >768 */
 @media screen and (max-width:480px) {
     navbar {
         display: none;
     }
     #navbar2 {
         display: flex;
-    }
-}
-@media screen and (min-width:768px) {
-    #navbar2 {
-        display: none;
-    }
-    navbar {
-        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 4rem;
+        width: 100%;
+        position: fixed;
+        background-color: whitesmoke;
+        border-bottom: solid 2px rgb(199, 192, 187);
+        z-index: 21;
     }
 }
 
