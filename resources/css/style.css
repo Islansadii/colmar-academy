@@ -79,7 +79,7 @@ navbar {
     text-align: center;
 }
 
-/* Navbar for screens <480 */
+/* Navbar for screens <480px, >480px */
 @media screen and (max-width:480px) {
     navbar {
         display: none;
@@ -164,7 +164,7 @@ a {
     text-decoration: none;
 
 }
-/* Header for screens <480 */
+/* Header for screens <480px */
 @media screen and (max-width:480px) {
     header {
         flex-direction: column;
@@ -267,7 +267,7 @@ a {
 .n2 {
 
 }
-/* Practise section for screens <480 */
+/* Practise section for screens <480px, >480px */
 @media screen and (max-width:480px) {
     .n1 {
         display: none;
@@ -298,3 +298,28 @@ a {
     }
 }
 
+
+/* LEARNING SECTION */
+#learning {
+
+}
+
+#learning h2 {
+
+}
+
+.learning-container {
+
+}
+
+.learning-container img {
+
+}
+
+.learning-container h4 {
+
+}
+
+.learning-container p {
+
+}
