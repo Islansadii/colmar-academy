@@ -24,7 +24,7 @@ h3 {
     padding-bottom: 1rem;
 }
 
-/* Navbar */
+/* NAVBAR */
 navbar {
     position: fixed;
     display: flex;
@@ -68,7 +68,7 @@ navbar {
     text-align: center;
 }
 
-/* Navbar for screens <480, >768 */
+/* Navbar for screens <480 */
 @media screen and (max-width:480px) {
     navbar {
         display: none;
@@ -86,13 +86,14 @@ navbar {
     }
 }
 
-/* Header */
+
+
+/* HEADER */
 header {
     background-color: rgb(199, 192, 187);
     display: inline-flex;
     flex-direction: row;
     position: relative;
-    top: 4rem;
 }
 
 .header-left {
