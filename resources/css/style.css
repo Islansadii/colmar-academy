@@ -81,22 +81,7 @@ navbar {
 }
 
 /* Navbar for screens <480, 480-768, >768 */
-@media screen and (min-width:480px) and (max-width:768px){
-    .navbar-right1 ul {
-        justify-content: flex-end;
-        padding-right: 5px;
-    }
-    .navbar-right1 li {
-        padding-left: 0.5rem;
-    }
-    .navbar-left1 {
-        padding-left: 5px;
-    }
-    #navbar2 {
-        display: none;
-    }
 
-}
 @media screen and (max-width:480px) {
     navbar {
         display: none;
