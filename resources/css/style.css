@@ -6,9 +6,22 @@ html {
     font-size: 16px;
 }
 body {
-    background-color: seashell;
+    background-color: whitesmoke;
     font-family: 'Nunito', sans-serif;
     color: black;
+}
+img {
+    max-width: 100%;
+}
+h1 {
+    font-size: 3rem;
+    line-height: 1;
+    padding-bottom: 1rem;
+}
+h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 /* Navbar */
@@ -16,9 +29,10 @@ navbar {
     position: fixed;
     display: flex;
     width: 100%;
-    background-color: seashell;
+    background-color: whitesmoke;
     z-index: 20;
     height: 4rem;
+    border-bottom: solid 2px rgb(199, 192, 187);
 }
 
 #navbar2 {
@@ -28,7 +42,9 @@ navbar {
     height: 4rem;
     width: 100%;
     position: fixed;
-    background-color: seashell;
+    background-color: whitesmoke;
+    border-bottom: solid 2px rgb(199, 192, 187);
+    z-index: 20;
 }
 
 #navbar {
@@ -64,6 +80,7 @@ navbar {
     text-align: center;
 }
 
+/* Navbar for screens <480, 480-768, >768 */
 @media screen and (min-width:480px) and (max-width:768px){
     .navbar-right1 ul {
         justify-content: flex-end;
@@ -83,20 +100,80 @@ navbar {
     }
     #navbar2 {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 4rem;
-        width: 100%;
-        position: fixed;
-        background-color: seashell;
+    }
+}
+@media screen and (min-width:768px) {
+    .navbar2 {
+        display: none;
+    }
+    navbar {
+        display: flex;
     }
 }
 
+/* Header */
+header {
+    background-color: rgb(199, 192, 187);
+    display: inline-flex;
+    flex-direction: row;
+    position: relative;
+    top: 4rem;
+}
 
-video {
+.header-left {
+    padding: 2rem 0.75rem 2rem 1.5rem;
+}
+
+.header-left img {
+    min-width: 60%; 
+}
+
+.header-right {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 4rem 2rem 0.75rem;
+}
+
+.header-bottom {
+    padding: 0.5rem 0 0.5rem 0;
+    background-color: rgb(71, 69, 67);
+    width: 70%;
+    display: flex;
+    justify-content: center;
 
 }
-img {
-    max-width: 100%;
+
+.header-bottom a {
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    color: whitesmoke;
+    text-align: center;
 }
 
+/* Header for screens <480 */
+@media screen and (max-width:480px) {
+    header {
+        flex-direction: column;
+        width: 100%;
+    }
+    .header-left,
+    .header-right {
+        padding: 0;
+        margin: 0;
+    }
+    .header-right {
+        padding: 2rem 1rem;
+    }
+    h1 {
+        padding-bottom: 2rem;
+    }
+    h3 {
+        padding-bottom: 1.5rem;
+    }
+    .header-bottom {
+        width: 100%;
+    }
+   
+}
