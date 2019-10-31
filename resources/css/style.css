@@ -8,7 +8,7 @@ html {
 body {
     background-color: whitesmoke;
     font-family: 'Nunito', sans-serif;
-    color: rgb(71, 69, 67);
+    color: rgb(53, 51, 50);
 }
 img {
     max-width: 100%;
@@ -121,21 +121,38 @@ header {
 }
 
 .header-bottom {
-    padding: 0.5rem 0 0.5rem 0;
-    background-color: rgb(71, 69, 67);
-    width: 70%;
-    display: flex;
+    width: 100%;
+    display: block;
     justify-content: center;
-
 }
 
-.header-bottom a {
-    text-decoration: none;
-    letter-spacing: 1.2px;
+button {
+    letter-spacing: 0.2rem;
     color: whitesmoke;
     text-align: center;
+    background-color: rgb(71, 69, 67);
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: none;
+    display: block;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: normal;
+    border-bottom: 2px solid rgb(53, 51, 50);
+    border-right: 2px solid rgb(53, 51, 50);
 }
+button:hover {
+    background-color: rgb(97, 95, 93);
+}
+button:active {
+    border-bottom: 2px solid rgb(83, 80, 79);
+    border-right: 2px solid rgb(83, 80, 79);
+}
+a {
+    text-decoration: none;
 
+}
 /* Header for screens <480 */
 @media screen and (max-width:480px) {
     header {
